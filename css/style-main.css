@@ -1,0 +1,265 @@
+:root{
+    --txt-bg-while: rgb(255, 255, 255);     /*Былий для фону та тексту*/
+    --txt-bg-blue: rgb(33, 150, 243);       /*Блакитний для фону та тексту*/
+    --txt-content: rgb(117, 117, 117);      /*Додатковий колір тексту*/
+    --bg-light-gray: rgb(245, 244, 250);    /*Світло сірий фон*/
+    --txt-a-blinck: rgba(255, 255, 255, 0.6);
+
+    --network-link: rgba(175, 177, 184);
+}
+
+/*=== Розширена шапка ===*/
+.head-h1{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: var(--txt-bg-while);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    text-transform: uppercase;
+
+    /*outline: 1px solid blue;*/
+}
+
+.head-button{
+    display: inline-block;
+    /*border: 1px solid transparent;*/
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
+    background-color: var(--txt-bg-blue);
+    color: var(--txt-bg-while);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+
+/*=== /Розширена шапка ===*/
+
+/*=== блок характеристик ===*/
+.text/*, .text h3*/{
+    font-size: 14px;
+}
+
+.properties{
+    display: flex ;
+}
+
+.properties .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.properties .item{
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.properties .item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--bg-light-gray);
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before{
+    background-image: url(../img/icon/antenna.svg);
+}
+
+.icon-clock::before{
+    background-image: url(../img/icon/clock.svg);
+}
+
+.icon-diagram::before{
+    background-image: url(../img/icon/diagram.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../img/icon/astronaut.svg);
+}
+
+.work-second{
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
+.properties-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.properties-content{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--txt-content);
+}
+
+.title-second{
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.foto-work{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto-work .item{
+    flex-basis: calc(100% / 3 -30px);
+}
+
+.foto-work .item:not(:last-child){
+    margin-right: 30px;
+}
+/*=== /блок характеристик ===*/
+
+/*=== Карточки сотрудников ===*/
+.card{
+    display: flex;
+}
+
+.card .item{
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.card .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.card-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.card-content{
+    margin-top: 0px;
+    margin-bottom: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txt-content);
+}
+
+.card-img{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.card-div-content{
+    padding: 30px 32px;
+}
+
+
+/*=== /Карточки сотрудников ===*/
+
+/*========== /Блок overlay==========*/
+.overlay{
+    text-align: center;
+    height: 600px;
+    max-width: 1600px;
+    background-color: var(--bg-dark-blue);
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/overlay/overlay.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    /*outline: 1px solid red;*/
+}
+/*========== /Блок footer==========*/
+
+/*========== Блок icon==========*/
+.network{
+    display: flex;
+}
+
+.card-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    color: var(--network-link);
+
+}
+
+.card-link:hover{
+    background-color: var(--txt-bg-blue);
+    color: var(--txt-bg-while);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.network .item:not(:last-child){
+    margin-right: 10px;
+}
+
+/*========== /Блок icon==========*/
+
+/*========== Блок vip==========*/
+.vip{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vip-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--network-link);
+    box-sizing: border-box;
+    border-radius: 4px;
+    
+    color: var(--network-link);
+}
+
+.vip-box:hover{
+    color: var(--txt-bg-blue);
+    border-color: var(--txt-bg-blue);
+}
+
+.vip .item:not(:last-child){
+    margin-right: 30px;
+}
+/*========== /Блок vip==========*/
