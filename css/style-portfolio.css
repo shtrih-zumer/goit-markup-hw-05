@@ -83,16 +83,39 @@ button:hover, button:focus{
     letter-spacing: 0.03em;
     color: var(--txt-content);
 }
-/*=== /Готові роботи ===*/
 
-/*.txt-content{
-    font-size: 16px;
-    color: var(--txt-content);
-    text-align: left;
+.work-effekt{
+    position: relative;
+    overflow: hidden;
 }
 
-.txt-title{
+.work-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-blue);
+
+    transform: translateY( 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.effekt-p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 322px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    font-style: normal;
     font-size: 18px;
-    text-align: left;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--text-txt-while);
 }
-*/
+
+.work-effekt:hover .work-overlay{
+    transform: translateY(0);
+}
