@@ -176,7 +176,7 @@
     display: flex;
 }
 
-.card .item{
+.card .item.shadow{
     flex-basis: calc(100% / 4 - 30px);
     background-color: var(--txt-bg-while);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -292,6 +292,7 @@
     border-radius: 4px;
     
     color: var(--network-link);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .vip-box:hover, .vip-box:focus{
